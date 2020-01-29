@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticeActivities">
+
+
+    <RadioButton
+        android:id="@+id/optionANew"
+        android:layout_width="384dp"
+        android:layout_height="66dp"
+        android:checked="false"
+        android:text="RadioButton"
+        app:layout_constraintBottom_toTopOf="@+id/optionBNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/optionBNew"
+        android:layout_width="384dp"
+        android:layout_height="66dp"
+        android:checked="false"
+        android:text="RadioButton"
+        app:layout_constraintBottom_toTopOf="@+id/optionCNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/optionCNew"
+        android:layout_width="384dp"
+        android:layout_height="66dp"
+        android:checked="false"
+        android:text="RadioButton"
+        app:layout_constraintBottom_toTopOf="@+id/optionDNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/optionDNew"
+        android:layout_width="384dp"
+        android:layout_height="66dp"
+        android:checked="false"
+        android:text="RadioButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <TextView
+        android:id="@+id/questionNew"
+        android:layout_width="386dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="92dp"
+        android:scrollbars="vertical"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/AnswerGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <Button
+        android:id="@+id/newNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/newBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="16dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/newNextButton" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="16dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/newBackButton" />
+
+    <TextView
+        android:id="@+id/minuteNew"
+        android:layout_width="32dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="00"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/questionNew"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/secondNew"
+        android:layout_width="32dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="00"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/questionNew"
+        app:layout_constraintStart_toEndOf="@+id/minuteNew" />
+
+    <TextView
+        android:id="@+id/colonNew"
+        android:layout_width="32dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="40dp"
+        android:text=":"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/questionNew"
+        app:layout_constraintStart_toEndOf="@+id/minuteNew" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="16dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saveButton" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionNew"
+        app:srcCompat="@drawable/separate" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/questionNew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/separate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

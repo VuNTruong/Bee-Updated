@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/questionSolution"
+        android:layout_width="386dp"
+        android:layout_height="227dp"
+        android:text="TextView"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/answerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <TextView
+        android:id="@+id/explanationSolution"
+        android:layout_width="382dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="44dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerSolution"
+        android:layout_width="378dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/explanationText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/explanationText"
+        android:layout_width="382dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:text="Explanation"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/explanationSolution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="382dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:text="Answer"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerSolution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerText2"
+        android:layout_width="358dp"
+        android:layout_height="24dp"
+        android:text="Question"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/questionSolution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992"
+        app:srcCompat="@drawable/separate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
